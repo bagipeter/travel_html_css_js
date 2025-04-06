@@ -1,84 +1,112 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-   <link rel="stylesheet" href="style.css" />
-    <title>Peti_Code | Utazni-Jó</title>
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="style.css" />
+  <title>PetiCode| Utazni jó</title>
 </head>
 <body>
-    <nav>
-      <div class="nav_header">
-        <div class="nav_logo">
-          <a href="#">
-            <img src="assets/logo.png" alt="Utazási iroda logo" />
-          </a>
-        </div>
-        <div class="nav_menu_btn" id="menu_btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
+  <nav>
+    <div class="nav_header">
+      <div class="nav_logo">
+        <a href="#">
+          <img src="assets/logo.png" alt="logo" />
+        </a>
       </div>
-      <ul class="nav_links" id="nav_links">
-        <li><a href="#home">Kezdőoldal</a></li>
-        <li><a href="#about">Rólunk</a></li>
-        <li><a href="#tour">Utazások</a></li>
-        <li><a href="#contact">Kapcsolat</a></li>
-        <li>
-          <button class="btn">
-            Terv
-            <span><i class="ri-arrow-right-long-line"></i></span>
-          </button>
-        </li>
-      </ul>
-    </nav>
+      <div class="menu_btn" id="menu_btn">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+    <ul class="nav_links" id="nav_links">
+      <li><a href="#home">Kezdőlap</a></li>
+      <li><a href="#about">Rólunk</a></li>
+      <li><a href="#tour">Utak</a></li>
+      <li><a href="#contact">Kapcsolat</a></li>
+      <li>
+        <button class="btn">
+              Cél
+          <span><i class="ri-arrow-right-long-line"></i></span>
+        </button>
+      </li>
+    </ul>
+  </nav>
 
-<!--     <header class="section_container header_container" id="home">
-      <div class="header_image">
-        <img src="assets/header.png" alt="Kép az Alpokról" />
+  <header class="section_container header_container" id="home">
+    <div class="header_image">
+      <img src="assets/header.png" alt="kép az alpokról" />
+    </div>
+    <div class="header_content">
+      <img src="assets/plane.png" alt="repülögép" />
+      <h1>Fedezd fel a világot velünk</h1>
+
+      <p class="section decription">
+        Discover breathtaking destinations and create unforgettable memories
+        with Advanto. From scenic landscapes to vibrant cities, your next
+        adventure awaits. Let's make your dream trip a reality!
+      </p>
+      <form action="/">
+        <div class="input_group">
+          <label for="location">
+            <span><i class="ri-map-pin-line"></i></span> Helyszín
+          </label>
+          <input
+            type="text"
+            name="location"
+            placeholder="Sahara, Algeria"
+          />
+        </div>
+        <div class="input__group">
+          <label for="date">
+            <span><i class="ri-calendar-line"></i></span> Dátum
+          </label>
+          <input
+            type="text"
+            name="location"
+            placeholder="2024.December.18"
+          />
+        </div>
+        <button class="btn">
+          <i class="ri-search-line"></i>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="section_container about_container">
+      <div class="about_image">
+        <img src="assets/about.jpg" alt="about" />
       </div>
-      <div class="header_content">
-        <img src="assets/plane.png" alt="repülőgép" />
-        <h1>Fedezd fel a világot velünk.</h1>
-        <p class="section_description">
-          Discover breathtaking destinations and create unforgettable memories
-          with Advanto. From scenic landscapes to vibrant cities, your next
-          adventure awaits. Let's make your dream trip a reality!
-        </p>
-        <form action="/">
-          <div class="input_group">
-            <label for="location">
-              <span><i class="ri-map-pin-line"></i></span> Helyszín
-            </label>
-            <input
-              type="text"
-              name="location"
-              placeholder="Sahara, Algeria"
-            />
-          </div>
-          <div class="input_group">
-            <label for="date">
-              <span><i class="ri-calendar-line"></i></span> Dátum
-            </label>
-            <input
-              type="text"
-              name="location"
-              placeholder="2024.December.13"
-            />
-          </div>
-          <button class="btn">
-            <i class="ri-search-line"></i>
-          </button>
-        </form>
+      <div class="about_content">
+        <div class="section_header">
+          <h2>
+            Itt az idő <span>egy kalandra</span> Ne hagyd veszni az alkalmat
+          </h2>
+          <p class="section__description">
+            At Advanto, we believe every journey is a story waiting to be told.
+            Whether you're seeking the tranquility of nature, the charm of
+            historic cities, or the excitement of new cultures, we're here to
+            turn your travel dreams into reality. So why wait? Pack your bags,
+            step out of your comfort zone, and let Advanto guide you to your
+            next great experience!
+          </p>
+          <div class="about_signature">Vágj bele!</div>
+        </div>
       </div>
-    </header> -->
+    </div>
+  </section>
+  
 </body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </html>
