@@ -274,6 +274,55 @@ nav{
   color: var(--text-dark);
   text-align: center;
 }
+
+.tour_grid{
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 0 1rem;
+}
+
+.tour_card{
+  padding: 2rem 1rem;
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+
+.tour_card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.tour_card img{
+  max-width: 125px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+}
+
+.tour_card h4{
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.tour_card p{
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.tour_card:hover p{
+  color: var(--primary-color);
+}
+
+.tour__btn{
+  display: flex;
+  justify-content: center;
+}
+
+
 @media (width > 768px){
   nav{
     position: static;
@@ -342,5 +391,9 @@ nav{
   .about_content{
     :is(.section_header, .section_description, .about_signature) {
       text-align: left;}
+  }
+
+  .tour_grid{
+    grid-template-columns: repeat(4,1fr);
   }
 }
